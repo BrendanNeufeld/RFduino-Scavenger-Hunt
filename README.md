@@ -66,7 +66,7 @@ Add this script tag to `www/index.html`. e.g. `<script src="http://<youripaddres
 Note: Be aware that if you leave this script tag in and you change networks, it can crash the application. So comment it out when doing on-site tests.
 
 
-To start debugging click the first link at the top of weinre, web inspector remote page. You will see "Targets: none" until you run the app on a device.
+To start debugging click the first link at the top of weinre web inspector remote page. You will see "Targets: none" until you run the app on a device.
 
 ## Using Sass (optional)
 
