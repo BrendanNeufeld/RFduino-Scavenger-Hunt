@@ -61,8 +61,9 @@ $ weinre -boundHost <youripaddress>
 ```
 Navigate to: `http://<youripaddress>:8080` and you should see the web inspector remote. Three sections down you should see the **Target Script** section.
 
-Add this script tag to `www/index.html`. Note: Be aware that if you leave this script tag in and you change networks, it can crash the application. So comment it out when doing on-site tests.
-e.g. `<script src="http://<youripaddress>:8080/target/target-script-min.js#anonymous"></script>`
+Add this script tag to `www/index.html`. e.g. `<script src="http://<youripaddress>:8080/target/target-script-min.js#anonymous"></script>`
+Note: Be aware that if you leave this script tag in and you change networks, it can crash the application. So comment it out when doing on-site tests.
+
 
 To start debugging click the first link at the top of weinre, web inspector remote page. You will see "Targets: none" until you run the app on a device.
 
