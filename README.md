@@ -26,7 +26,7 @@ $ npm install
 $ gulp install
 ```
 
-Add your mobile app platforms then install the cordova rfduino plugin. Note: I had to fork the [original repo](https://github.com/don/cordova-plugin-rfduino/tree/master/examples/button) in order to fix a bug, so install the plugin from my [forked repo](https://github.com/BrendanNeufeld/cordova-plugin-rfduino).
+Add your mobile app platforms then install the cordova rfduino plugin. Note: I had to fork the [original repo](https://github.com/don/cordova-plugin-rfduino/tree/master/examples/button) in order to fix a bug, so install the plugin from my [forked repo](https://github.com/BrendanNeufeld/cordova-plugin-rfduino) as follows.
 
 ```bash
 $ cordova platform add ios
@@ -81,5 +81,5 @@ Warning: the nightly version is not stable.
 
 
 ## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
+[Submit an issue](https://github.com/BrendanNeufeld/RFduino-Scavenger-Hunt/issues)
 
