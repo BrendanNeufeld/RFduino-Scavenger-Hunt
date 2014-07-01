@@ -1,27 +1,20 @@
-Ionic App Base
+RFduino Scavenger Hunt
 =====================
 
-A starting project for Ionic that optionally supports
-using custom SCSS.
+This project is a cordova mobile app built with ionic and angular. The mobile application is a scavenger hunt game. The mobile app works in conjunction with 3 or more RFduinos. Information on RFduino can be found [here](http://www.rfduino.com/). Communication between the mobile app and the RFduinos is done via BLE ([Bluetooth Low Energy](http://en.wikipedia.org/wiki/Bluetooth_low_energy)). Players start the scavenger hunt by checking in with one of the RFduinos as an entry point. The items to be collected (resources) are transferred to the mobile app at the entry point. The mobile app uses the signal strength (RSSI) of the resource (RFduino) to give the player a general idea of the resource's proximity. Once the player gets close to the resource (around 2 feet) the player can 'collect' the resource by connecting directly to the RFduino. At any time the player can proceed to the checkout point (checkout RFduino). Based on the time spent and the number of resources collected the RFduino can be used to actuate some physical feedback. 
 
 ## Using this project
 
-We recommend using the `ionic` utility to create new Ionic projects that are based on this project but use a ready-made starter template.
-
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
-
+It is recommended that you have the following utilities installed: `cordova`, `ionic`, `sass`, and `gulp`. If you are on OS X the Ruby gem installer should already be installed. If you are on Windows go [here](http://www.rubyinstaller.org/) to install. This will allow you to install Sass ([more info on installing Sass](http://sass-lang.com/install)). Use the following commands to install the recommended utilities:
 ```bash
-$ sudo npm install -g ionic
+$ sudo gem install sass
+$ sudo npm install -g cordova ionic gulp
 ```
 
-Then run:
-
-```bash
-$ sudo npm install -g ionic
-$ ionic start myProject tabs
-```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
+For more info on Cordova: [Apache Cordova Documentation](http://cordova.apache.org/docs/en/3.5.0/index.html).
+For more info on Ionic: [Ionic Getting Started](http://ionicframework.com/getting-started) page.
+For more info on Sass: [Sass Guide](http://sass-lang.com/).
+For more info on Gulp: [gulp.js](http://gulpjs.com/).
 
 ## Installation
 
