@@ -17,8 +17,6 @@ For iPhone apps you will need the Xcode [Command Line Tools](http://docwiki.emba
 
 ## Installation
 
-While we recommend using the `ionic` utility to create new Ionic projects, you can use this repo as a barebones starting point to your next Ionic app.
-
 To use this project as is, first clone the repo from GitHub, then run:
 
 ```bash
