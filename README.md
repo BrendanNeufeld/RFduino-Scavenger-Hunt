@@ -1,7 +1,7 @@
 RFduino Scavenger Hunt
 =====================
 
-This project is a cordova mobile app built with ionic and angular. The mobile application is a scavenger hunt game. The mobile app works in conjunction with 3 or more RFduinos. Information on RFduino can be found [here](http://www.rfduino.com/). Communication between the mobile app and the RFduinos is done via BLE ([Bluetooth Low Energy](http://en.wikipedia.org/wiki/Bluetooth_low_energy)). Players start the scavenger hunt by checking in with one of the RFduinos as an entry point. The items to be collected (resources) are transferred to the mobile app at the entry point. The mobile app uses the signal strength (RSSI) of the resource (RFduino) to give the player a general idea of the resource's proximity. Once the player gets close to the resource (around 2 feet) the player can 'collect' the resource by connecting directly to the RFduino. At any time the player can proceed to the checkout point (checkout RFduino). Based on the time spent and the number of resources collected the RFduino can be used to actuate some physical feedback. 
+This project is a cordova mobile app built with ionic and angular. It is a scavenger hunt game that works in conjunction with 3 or more [RFduinos](http://www.rfduino.com/). Communication between the mobile app and the RFduinos is done via BLE ([Bluetooth Low Energy](http://en.wikipedia.org/wiki/Bluetooth_low_energy)). Players start the scavenger hunt by checking in with one of the RFduinos as an entry point. The app uses the signal strength (RSSI) of the RFduino to give the player a general idea of the resource's proximity. Once the player gets close to the resource (around 2 feet) the player can 'collect' the resource by connecting directly to the RFduino. At any time the player can proceed to the checkout point (checkout RFduino). Based on the time spent and the number of resources collected the checkout RFduino can be used to actuate some physical feedback.
 
 ## Using this project
 
@@ -11,10 +11,9 @@ $ sudo gem install sass
 $ sudo npm install -g cordova ionic gulp
 ```
 
-For more info on Cordova: [Apache Cordova Documentation](http://cordova.apache.org/docs/en/3.5.0/index.html).
-For more info on Ionic: [Ionic Getting Started](http://ionicframework.com/getting-started) page.
-For more info on Sass: [Sass Guide](http://sass-lang.com/).
-For more info on Gulp: [gulp.js](http://gulpjs.com/).
+More information: [Apache Cordova Documentation](http://cordova.apache.org/docs/en/3.5.0/index.html), [Ionic Getting Started](http://ionicframework.com/getting-started), [Sass Guide](http://sass-lang.com/), [gulp.js](http://gulpjs.com/).
+
+For iPhone apps you will need the Xcode [Command Line Tools](http://docwiki.embarcadero.com/RADStudio/XE4/en/Installing_the_Xcode_Command_Line_Tools_on_a_Mac) and for Android apps you will need the [Android Development Tools](http://developer.android.com/sdk/index.html).
 
 ## Installation
 
