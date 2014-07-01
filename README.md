@@ -33,6 +33,39 @@ $ cordova platform add ios
 $ cordova platform add android
 $ cordova plugin add https://github.com/BrendanNeufeld/cordova-plugin-rfduino.git
 ```
+
+## Running this project
+
+To run this project on your mobile device use:
+```bash
+$ cordova run ios -d
+```
+or
+```bash
+$ cordova run android -d
+```
+To quit the debugger run:
+```bash
+$ quit
+```
+
+To run the project in your browser you can use `ionic serve`. This may not work that well as angular is dependent on some native device events.
+
+## Debugging with Weinre (optional)
+
+For debugging this project uses [weinre](http://tinyurl.com/6quwfna)
+
+In terminal run:
+```bash
+$ weinre -boundHost <youripaddress>
+```
+Navigate to: `http://<youripaddress>:8080` and you should see the web inspector remote. Three sections down you should see the **Target Script** section.
+
+Add this script tag to `www/index.html`. Note: Be aware that if you leave this script tag in and you change networks, it can crash the application. So comment it out when doing on-site tests.
+e.g. `<script src="http://<youripaddress>:8080/target/target-script-min.js#anonymous"></script>`
+
+To start debugging click the first link at the top of weinre, web inspector remote page. You will see "Targets: none" until you run the app on a device.
+
 ## Using Sass (optional)
 
 This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
@@ -49,7 +82,7 @@ the include to your `ionic.app.css` file which now contains all your Sass code a
 -->
 ```
 
-## Updating Ionic
+## Updating Ionic (optional)
 
 To update to a new version of Ionic, open bower.json and change the version listed there.
 
