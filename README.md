@@ -17,11 +17,10 @@ For iPhone apps you will need the Xcode [Command Line Tools](http://docwiki.emba
 
 ## Installation
 
-To use this project as is, first clone the repo from GitHub, then run:
+To use this project as is, first clone the repo from GitHub `https://github.com/BrendanNeufeld/RFduino-Scavenger-Hunt.git`, then run:
 
 ```bash
-$ cd ionic-app-base
-$ sudo npm install -g cordova ionic gulp
+$ cd RFduino-Scavenger-Hunt
 $ npm install
 $ gulp install
 ```
