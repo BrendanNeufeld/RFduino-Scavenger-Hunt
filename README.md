@@ -17,14 +17,22 @@ For iPhone apps you will need the Xcode [Command Line Tools](http://docwiki.emba
 
 ## Installation
 
-To use this project as is, first clone the repo from GitHub `https://github.com/BrendanNeufeld/RFduino-Scavenger-Hunt.git`, then run:
+To use this project as is, first run:
 
 ```bash
+$ git clone https://github.com/BrendanNeufeld/RFduino-Scavenger-Hunt.git
 $ cd RFduino-Scavenger-Hunt
 $ npm install
 $ gulp install
 ```
 
+Add your mobile app platforms then install the cordova rfduino plugin. Note: I had to fork the [original repo](https://github.com/don/cordova-plugin-rfduino/tree/master/examples/button) in order to fix a bug, so install the plugin from my [forked repo](https://github.com/BrendanNeufeld/cordova-plugin-rfduino).
+
+```bash
+$ cordova platform add ios
+$ cordova platform add android
+$ cordova plugin add https://github.com/BrendanNeufeld/cordova-plugin-rfduino.git
+```
 ## Using Sass (optional)
 
 This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
